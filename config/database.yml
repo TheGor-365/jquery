@@ -8,12 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: jquery
+  database: jquery-site
 
 test:
   <<: *default
-  database: jquery-development
+  database: jquery-development-site
 
 production:
   <<: *default
-  database: jquery-production
+  database: jquery-production-site
