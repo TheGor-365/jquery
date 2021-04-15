@@ -1,0 +1,89 @@
+<div class="intro-header">
+  <div class="intro-container">
+    <div class="intro-row">
+      <div class="intro-col-md-4">
+        <h1 class="intro-h1">madison square market</h1>
+      </div>
+      <div class="intro-pull-right">
+
+        <ul class="intro-ul">
+
+          <li class="intro-dropdown intro-li" id="intro-cart">
+            <h3 class="intro-h3">cart &#x25BE;</h3>
+            <ul class="intro-dropdown-menu intro-ul" id="intro-cartMenu">
+              <li class="intro-li">View Cart</li>
+              <li class="intro-li">Saved Carts</li>
+            </ul>
+          </li>
+
+          <li class="intro-dropdown intro-li"  id="intro-account">
+            <h3 class="intro-h3">account &#x25BE;</h3>
+            <ul class="intro-dropdown-menu intro-ul" id="intro-accountMenu">
+              <li class="intro-li">View Account</li>
+              <li class="intro-li">Check Order Status</li>
+              <li class="intro-li">Sign in</li>
+            </ul>
+          </li>
+
+          <li class="intro-dropdown intro-li"  id="intro-help">
+            <h3 class="intro-h3">help &#x25BE;</h3>
+            <ul class="intro-dropdown-menu intro-ul" id="intro-helpMenu">
+              <li class="intro-li">FAQs</li>
+              <li class="intro-li">Return Policy</li>
+              <li class="intro-li">Shipping Info</li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="intro-main"></div>
+<div class="intro-footer"></div>
+
+<script type="text/javascript">
+
+  $(document).ready(() => {
+
+    $('.intro-hide-button').on('click', () => {
+      $('.intro-first-image').hide();
+    });
+
+    $('.intro-show-button').on('click', () => {
+      $('.intro-first-image').show();
+    });
+
+    $('.intro-toggle-button').on('click', () => {
+      $('.intro-first-image').toggle();
+    });
+
+    $('.intro-fade-out-button').on('click', () => {
+      $('.intro-fade-image').fadeOut(500);
+    });
+
+    $('.intro-fade-in-button').on('click', () => {
+      $('.intro-fade-image').fadeIn(4000);
+    });
+
+    $('.intro-fade-toggle-button').on('click', () => {
+      $('.intro-fade-image').fadeToggle();
+    });
+
+    $('.intro-up-button').on('click', () => {
+      $('.intro-slide-image').slideUp(100);
+    });
+
+    $('.intro-down-button').on('click', () => {
+      $('.intro-slide-image').slideDown('slow');
+    });
+
+    $('.intro-slide-toggle-button').on('click', () => {
+      $('.intro-slide-image').slideToggle(400);
+    });
+
+  });
+
+</script>

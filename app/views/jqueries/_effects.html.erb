@@ -1,0 +1,33 @@
+<table align='effects-center'>
+
+  <tr class="effects-tr">
+    <th class='effects-header-small effects-th'>
+      <div class='effects-header-text'>Buttons</div>
+    </th>
+    <th class='effects-header-big effects-th'>
+      <div class='effects-image-text'>Images</div>
+    </th>
+  </tr>
+
+  <tr class="effects-tr">
+    <th class='effects-button-col effects-th'>
+      <button class="effects-hide-button effects-button">
+        <div class = 'effects-button-text'>HIDE</div>
+      </button>
+    </th>
+    <th rowspan = 3 class = 'effects-img-col effects-th'>
+      <img src = "https://s3.amazonaws.com/codecademy-content/courses/jquery/effects/veggies.jpg" class ="effects-first-image">
+    </th>
+  </tr>
+
+</table>
+
+<script type="text/javascript">
+
+  $(document).ready(() => {
+    $('.effects-hide-button').on('click', () => {
+      $('.effects-first-image').hide();
+    })
+  });
+
+</script>

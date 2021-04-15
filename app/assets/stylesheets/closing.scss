@@ -1,0 +1,275 @@
+.closing-body {
+  font-family: 'Roboto Condensed', Helvetica, sans-serif;
+  text-align: left;
+  font-size: 18px;
+  color: #303030;
+}
+
+.closing-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.closing-h3 {
+  color: #C3FF00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.closing-h4 {
+  text-transform: uppercase;
+}
+
+.closing-disabled .closing-h3 {
+  color: #535353;
+  cursor: not-allowed;
+}
+
+.closing-button-active {
+  color: #C3FF00;
+  background-color: #535353;
+}
+
+.closing-nav {
+  background-color: #303030;
+  color: #EFEFEF;
+}
+
+.closing-nav .closing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closing-nav .closing-container .closing-object {
+  width: 4.5em;
+  padding: 1.2em 0.5em;
+}
+
+.closing-nav .closing-container .closing-login-button,
+.closing-nav .closing-container .closing-menu-button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1em 1.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.closing-nav-menu {
+  background-color: #535353;
+  color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+}
+
+.closing-nav-menu .closing-container {
+  padding: 1.5em;
+  display: flex;
+}
+
+.closing-nav-menu .closing-container .closing-ul {
+  list-style: none;
+}
+
+.closing-nav-menu .closing-container .closing-ul .closing-li {
+  padding: 0.25em 2em;
+}
+
+.closing-nav-menu .closing-container .closing-ul .closing-li:first-child {
+  text-transform: uppercase;
+  color: #C3FF00;
+  letter-spacing: 0.05em;
+}
+
+.closing-hide {
+  display: none;
+}
+
+.closing-login-form {
+  background-color: #535353;
+  padding: 1em 0 0;
+  color: #EFEFEF;
+  display: none;
+}
+
+.closing-login-form .closing-container {
+  padding: 0 0.5em;
+}
+
+.closing-login-form .closing-h4 {
+  font-weight: 400;
+}
+
+.closing-login-form .closing-input {
+  width: calc(100% - 1em);
+  border: none;
+  height: 2em;
+  margin: 0.5em 0;
+  font-size: 1em;
+  padding: 0 0.5em;
+}
+
+.closing-login-form .closing-sign-in-button {
+  background-color: #303030;
+  color: #C3FF00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  width: 100%;
+  height: 2.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.closing-product-card {
+  margin: 1em 0;
+}
+
+.closing-product-card .closing-dark-sole-original,
+.closing-product-card .closing-sole-air-ii,
+.closing-product-card .closing-tidal-x {
+  background-size: 28em 15em;
+  background-position: center;
+  height: 14em;
+  transition: 0.2s;
+}
+
+.closing-product-card .closing-sole-air-ii {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/sole-air-ii.png");
+}
+
+.closing-product-card .closing-tidal-x {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/tidal-x.png");
+}
+
+.closing-product-card .closing-dark-sole-original {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/dark-sole-original.png");
+}
+
+.closing-product-card .closing-photo-active {
+  background-size: 30.8em 16.5em;
+  transition: 0.2s;
+}
+
+.closing-product-card .closing-product-details {
+  margin-top: -5px;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.closing-product-card .closing-product-details .closing-h4,
+.closing-product-card .closing-product-details .closing-p {
+  padding: 0.7em 1.25em;
+}
+
+.closing-product-card .closing-product-details .closing-div {
+  display: flex;
+}
+
+.closing-product-card .closing-product-details .closing-more-details-button {
+  background-color: #535353;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  width: 1em;
+  transition: 0.1s;
+}
+
+.closing-product-card .closing-product-details .closing-more-details-button .closing-img {
+  position: relative;
+  left: 0.1em;
+}
+
+.closing-product-card .closing-product-details .closing-more-details-button .closing-rotate {
+  transition: 0.1s;
+  transform: rotate(90deg);
+}
+
+.closing-product-card .closing-shoe-details {
+  display: none;
+  background-color: #535353;
+  color: #EFEFEF;
+}
+
+.closing-product-card .closing-shoe-details .closing-active {
+  background-color: #C3FF00;
+  color: #303030;
+}
+
+.closing-product-card .closing-size-chart,
+.closing-product-card .closing-p {
+  padding: 1em 1.25em;
+}
+
+.closing-product-card .closing-size-chart .closing-ul,
+.closing-product-card .closing-p .closing-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.closing-product-card .closing-size-chart .closing-ul .closing-li,
+.closing-product-card .closing-p .closing-ul .closing-li {
+  padding: 0.5em;
+  background-color: #303030;
+  width: 100%;
+  text-align: center;
+  margin-right: 2px;
+}
+
+.closing-product-card .closing-buy-now-button {
+  background-color: #303030;
+  text-align: center;
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+.closing-shopping-cart {
+  background-color: #171717;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 3.5em;
+}
+
+.closing-shopping-cart .closing-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.closing-shopping-cart .closing-container .closing-cart {
+  display: flex;
+}
+
+.closing-shopping-cart .closing-container .closing-cart .closing-object {
+  margin-right: 0.75em;
+}
+
+.closing-footer {
+  color: #EFEFEF;
+  background-color: #303030;
+  margin-top: 2em;
+  padding: 2em 0.5em;
+}
+
+.closing-footer .closing-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.closing-footer .closing-container .closing-object {
+  width: 4.5em;
+}

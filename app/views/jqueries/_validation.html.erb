@@ -1,0 +1,66 @@
+<div class = 'validation-card'>
+
+  <div class = "validation-question">
+    <div class = 'validation-question-text'>What is the capital of New York?</div>
+  </div>
+
+  <div class = 'validation-hint-box'>
+    <div class = 'validation-hide-hint-text'>SHOW/HIDE HINT</div>
+  </div>
+
+  <div class = 'validation-hint'>
+    <div class = 'validation-hide-hint-text'>The capital is not the largest city!</div>
+  </div>
+
+  <div class = 'validation-wrong-answer-one validation-answer'>
+    <div class= 'validation-wrong-text-one validation-answer-text'>New York City</div>
+  </div>
+
+  <div class = 'validation-wrong-answer-two validation-answer'>
+    <div class= 'validation-wrong-text-two validation-answer-text'>Buffalo</div>
+  </div>
+
+  <div class = 'validation-wrong-answer-three validation-answer'>
+    <div class= 'validation-wrong-text-three validation-answer-text'>Syracuse</div>
+  </div>
+
+  <div class = 'validation-correct-answer validation-answer'>
+    <div class = 'validation-correct-answer-text validation-answer-text'>Albany</div>
+  </div>
+
+  <div class = 'validation-result'>
+    <div class = 'validation-smiley'> <img src='https://s3.amazonaws.com/codecademy-content/courses/jquery/effects/smile_icon.svg' /> </div>
+    <div class = 'validation-frown'> <img src='https://s3.amazonaws.com/codecademy-content/courses/jquery/effects/frown_icon.svg' />  </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(() =>{
+
+    $('.validation-hint-box').on('click', () => {
+      $('.validation-hint').slideToggle(400);
+    })
+
+    $('.validation-wrong-answer-one').on('click', () => {
+      $('.validation-wrong-text-one').fadeOut('slow');
+      $('.validation-wrong-text-one').show('validation-frown');
+    })
+
+    $('.validation-wrong-answer-two').on('click', () => {
+      $('.validation-wrong-text-two').fadeOut('slow');
+      $('.validation-wrong-text-two').show('validation-frown');
+    })
+
+    $('.validation-wrong-answer-three').on('click', () => {
+      $('.validation-wrong-text-three').fadeOut('slow');
+      $('.validation-wrong-text-three').show('validation-frown');
+    })
+
+    $('.validation-correct-answer').on('click', () => {
+      $('validation-correct-text-answer').show('validation-smiley');
+    })
+
+  });
+
+</script>

@@ -1,0 +1,85 @@
+
+<div class="container col-12">
+  <div class="row">
+
+    <div class="col-3">
+
+    </div>
+
+    <div class="col-7">
+
+      <h1 class="mt-5 mb-5">Jqueries</h1>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/menu' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/intro' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/effects' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/validation' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/events' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/target' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/animation' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/change' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/photo' %>
+      </div>
+
+      <div class="card shadow-lg border-0 mt-5">
+        <%= render 'jqueries/closing' %>
+      </div>
+
+    </div>
+
+    <div class="col-2">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jqueries.each do |jquery| %>
+      <tr>
+        <td><%= link_to 'Show', jquery %></td>
+        <td><%= link_to 'Edit', edit_jquery_path(jquery) %></td>
+        <td><%= link_to 'Destroy', jquery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jquery', new_jquery_path %>

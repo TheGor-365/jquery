@@ -1,0 +1,107 @@
+<div class="target-body">
+
+  <div class="target-header">
+    <div class="target-container">
+      <div class="target-row">
+        <div class="target-col-xs-2">
+          <h1 class="target-h1">feedster</h1>
+        </div>
+        <div class="target-col-xs-7">
+        </div>
+
+        <div class="target-col-xs-2">
+          <h1 class="target-menu target-h1">menu</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class='target-nav-menu'>
+    <div class='target-container-nav'>
+      <ul class="target-ul">
+        <li class="target-li">Bang Bang</li>
+        <li class="target-li">Mexican-Chinese</li>
+        <li class="target-li">Indo-Scandinavian</li>
+        <li class="target-li">Polish-Korean</li>
+      </ul>
+      <ul class="target-ul">
+        <li class="target-li">Contact</li>
+        <li class="target-li">Twitter</li>
+        <li class="target-li">Facebook</li>
+        <li class="target-li">Instagram</li>
+      </ul>
+    </div>
+  </div>
+
+  <form method= "POST" class="target-form target-newPost">
+    <div class="target-container">
+      <div class="target-post">
+        <img class="target-img target-avatar" src="https://s3.amazonaws.com/codecademy-content/courses/jquery+jfiddle+test/feedster/profile-purple.svg">
+        <h3 class='target-h3 target-name'>YOUR NAME HERE</h3>
+        <textarea class="target-textarea target-postText" placeholder="What's on your mind?"></textarea>
+        <p class="target-p target-wordcount"><span class='target-characters'>140</span> characters remaining</p>
+        <div class="target-button-holder">
+          <button type="submit" class="target-btn-post">POST</button>
+          <button type="submit" class="target-btn-post">WORD COUNT</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="target-posts">
+    <div class="target-container">
+      <div class="target-post">
+        <img class="target-img target-avatar" src="https://s3.amazonaws.com/codecademy-content/courses/jquery+jfiddle+test/feedster/profile-teal.svg">
+        <h3 class="target-h3">Ivory Breath</h3>
+        <p class="target-p">Buffalo bulgogi, are you kidding me!?! Do yourself a favor and head to this restaurant.</p>
+        <button class="target-btn">+1</button>
+      </div>
+
+      <div class="target-post">
+        <img class="target-img target-avatar" src="https://s3.amazonaws.com/codecademy-content/courses/jquery+jfiddle+test/feedster/profile-yellow.svg">
+        <h3 class="target-h3">Bacon West</h3>
+        <p class="target-p">Tacos, sausage, fundido, saurkraut and more! 10/10 would recommend.</p>
+        <button class="target-btn">+1</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(() => {
+
+    $('.target-menu').on('mouseenter', () => {
+      $('.target-nav-menu').show();
+    });
+
+    $('.target-nav-menu').on('mouseleave', () => {
+      $('.target-nav-menu').hide();
+    });
+
+    $('.target-btn').on('mouseenter', (event) => {
+      $(event.currentTarget).addClass('target-btn-hover')
+    }).on('mouseleave', (event) => {
+      $(event.currentTarget).removeClass('target-btn-hover');
+    });
+
+    $('.target-postText').on('keyup', (event) => {
+      let post = $(event.currentTarget).val();
+      let remaining = 140 - post.length;
+
+      if (remaining <= 0) {
+        $('.target-wordcount').addClass('target-red');
+      } else {
+        $('.target-wordcount').removeClass('target-red');
+      }
+
+      $('.target-characters').html(remaining);
+    });
+
+    $('.target-postText').focus();
+
+  });
+
+</script>

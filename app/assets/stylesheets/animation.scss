@@ -1,0 +1,258 @@
+.animation-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.animation-disabled .animation-h3 {
+  color: #535353;
+  cursor: not-allowed;
+}
+
+.animation-button-active {
+  color: #C3FF00;
+  background-color: #535353;
+}
+
+.animation-nav {
+  background-color: #303030;
+  color: #EFEFEF;
+  overflow: hidden;
+}
+
+.animation-nav .animation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animation-nav .animation-container .animation-object {
+  width: 4.5em;
+  padding: 1.2em 0.5em;
+}
+
+.animation-nav .the-container .the-login-button,
+.animation-nav .the-container .the-menu-button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1em 1.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.animation-nav-menu {
+  background-color: #535353;
+  color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+}
+
+.animation-nav-menu .animation-container {
+  padding: 1.5em;
+  display: flex;
+}
+
+.animation-nav-menu .animation-container .animation-ul {
+  list-style: none;
+}
+
+.animation-nav-menu .animation-container .animation-ul .animation-li {
+  padding: 0.25em 2em;
+}
+
+.animation-nav-menu .animation-container .animation-ul .animation-li:first-child {
+  text-transform: uppercase;
+  color: #C3FF00;
+  letter-spacing: 0.05em;
+}
+
+.animation-hide {
+  display: none;
+}
+
+.animation-login-form {
+  background-color: #535353;
+  padding: 1em 0 0;
+  color: #EFEFEF;
+  display: none;
+}
+
+.animation-login-form .animation-container {
+  padding: 0 0.5em;
+}
+
+.animation-login-form .animation-h4 {
+  font-weight: 400;
+}
+
+.animation-login-form .animation-input {
+  width: calc(100% - 1em);
+  border: none;
+  height: 2em;
+  margin: 0.5em 0;
+  font-size: 1em;
+  padding: 0 0.5em;
+}
+
+.animation-login-form .animation-sign-in-button {
+  background-color: #303030;
+  color: #C3FF00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  width: 100%;
+  height: 2.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.animation-product-card {
+  margin: 1em 0;
+}
+
+.animation-product-card .animation-dark-sole-original,
+.animation-product-card .animation-sole-air-ii,
+.animation-product-card .animation-tidal-x {
+  background-size: 28em 15em;
+  background-position: center;
+  height: 14em;
+  transition: 0.2s;
+}
+
+.animation-product-card .animation-sole-air-ii {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/sole-air-ii.png");
+}
+
+.animation-product-card .animation-tidal-x {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/tidal-x.png");
+}
+
+.animation-product-card .animation-dark-sole-original {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/dark-sole-original.png");
+}
+
+.animation-product-card .animation-photo-active {
+  background-size: 30.8em 16.5em;
+  transition: 0.2s;
+}
+
+.animation-product-card .animation-product-details {
+  margin-top: -5px;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation-product-card .animation-product-details .animation-h4,
+.animation-product-card .animation-product-details .animation-p {
+  padding: 0.7em 1.25em;
+}
+
+.animation-product-card .animation-product-details .animation-div {
+  display: flex;
+}
+
+.animation-product-card .animation-product-details .animation-more-details-button {
+  background-color: #535353;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  width: 1em;
+  transition: 0.1s;
+}
+
+.animation-product-card .animation-product-details .animation-more-details-button .animation-img {
+  position: relative;
+  left: 0.1em;
+}
+
+.animation-product-card .animation-product-details .animation-more-details-button .animation-rotate {
+  transition: 0.1s;
+  transform: rotate(90deg);
+}
+
+.animation-product-card .animation-shoe-details {
+  display: none;
+  background-color: #535353;
+  color: #EFEFEF;
+}
+
+.animation-product-card .animation-shoe-details .animation-active {
+  background-color: #C3FF00;
+  color: #303030;
+}
+
+.animation-product-card .animation-size-chart,
+.animation-product-card p {
+  padding: 1em 1.25em;
+}
+
+.animation-product-card .animation-size-chart .animation-ul,
+.animation-product-card p ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.animation-product-card .animation-size-chart .animation-ul .animation-li,
+.animation-product-card .animation-p .animation-ul .animation-li {
+  padding: 0.5em;
+  background-color: #303030;
+  width: 100%;
+  text-align: center;
+  margin-right: 2px;
+}
+
+.animation-product-card .animation-buy-now-button {
+  background-color: #303030;
+  text-align: center;
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+.animation-shopping-cart {
+  background-color: #171717;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 3.5em;
+}
+
+.animation-shopping-cart .animation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.animation-shopping-cart .animation-container .animation-cart {
+  display: flex;
+}
+
+.animation-shopping-cart .animation-container .animation-cart .animation-object {
+  margin-right: 0.75em;
+}
+
+.animation-footer {
+  color: #EFEFEF;
+  background-color: #303030;
+  margin-top: 2em;
+  padding: 2em 0.5em;
+}
+
+.animation-footer .animation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation-footer .animation-container .animation-object {
+  width: 4.5em;
+}

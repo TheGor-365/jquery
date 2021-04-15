@@ -1,0 +1,73 @@
+<div class="change-body">
+
+  <div class = "change-outer-container">
+
+    <header class="change-header">
+      <h1 class="change-h1">TYP</h1>
+      <h2 class="change-h2">Test-drive your text</h2>
+    </header>
+
+    <div class="change-formHolder">
+      <form method="POST">
+        <div class="change-third">
+          Font Family <select name="change-font" id="change-font">
+            <option value="helvetica" id="change-helvetica">Helvetica</option>
+            <option value="times" id="change-times">Times</option>
+            <option value="impact" id="change-impact">Impact</option>
+            <option value="courier" id="change-courier">Courier</option>
+            <option value="verdana" id="change-verdana">Verdana</option>
+          </select>
+        </div>
+
+        <div class="change-third">
+          Font Size
+          <br>
+          <input class="change-input" type="text" placeholder="12" id="change-size">
+        </div>
+
+        <div class="change-third">
+          Font Weight  <select name="weight" id="change-weight">
+           <option value="normal">Normal</option>
+           <option value="bold">Bold</option>
+           <option value="bolder">Bolder</option>
+           <option value="lighter">lighter</option>
+         </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="change-preview">Sample Font</div>
+    <textarea class="change-textarea" name="text" placeholder="Type something here and see what happens..." id="change-text" cols="30" rows="10"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(() => {
+
+    $('#change-text').on('keyup', (event) => {
+      $('.change-preview').html($(even.currentTarget).val());
+    });
+
+    $('#change-font').on('change', (event) => {
+      $('.change-preview').css({
+        fontFamily: $(event.currentTarget).val()
+      })
+    });
+
+    $('#change-weight').on('change', (event) => {
+      $('.change-preview').css({
+        fontWeight: $(event.currentTarget).val()
+      })
+    });
+
+    $('#change-SIZE').on('keyup', (event) => {
+      let fontSize = $(event.currentTarget).val() + 'px';
+      $('.change-preview').css({
+        fontSize: fontSize
+      })
+    });
+
+  })
+
+</script>

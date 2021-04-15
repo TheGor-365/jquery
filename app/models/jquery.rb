@@ -1,0 +1,2 @@
+class Jquery < ApplicationRecord
+end

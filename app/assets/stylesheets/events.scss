@@ -1,0 +1,257 @@
+.events-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.events-disabled .events-h3 {
+  color: #535353;
+  cursor: not-allowed;
+}
+
+.events-button-active {
+  color: #C3FF00;
+  background-color: #535353;
+}
+
+.events-nav {
+  background-color: #303030;
+  color: #EFEFEF;
+}
+
+.events-nav .events-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events-nav .events-container .events-object {
+  width: 4.5em;
+  padding: 1.2em 0.5em;
+}
+
+.events-nav .events-container .events-login-button,
+.events-nav .events-container .events-menu-button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1em 1.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.events-nav-menu {
+  background-color: #535353;
+  color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+}
+
+.events-nav-menu .events-container {
+  padding: 1.5em;
+  display: flex;
+}
+
+.events-nav-menu .events-container .events-ul {
+  list-style: none;
+}
+
+.events-nav-menu .events-container .events-ul .events-li {
+  padding: 0.25em 2em;
+}
+
+.events-nav-menu .events-container .events-ul .events-li:first-child {
+  text-transform: uppercase;
+  color: #C3FF00;
+  letter-spacing: 0.05em;
+}
+
+.events-hide {
+  display: none;
+}
+
+.events-login-form {
+  background-color: #535353;
+  padding: 1em 0 0;
+  color: #EFEFEF;
+  display: none;
+}
+
+.events-login-form .events-container {
+  padding: 0 0.5em;
+}
+
+.events-login-form h4 {
+  font-weight: 400;
+}
+
+.events-login-form input {
+  width: calc(100% - 1em);
+  border: none;
+  height: 2em;
+  margin: 0.5em 0;
+  font-size: 1em;
+  padding: 0 0.5em;
+}
+
+.events-login-form .events-sign-in-button {
+  background-color: #303030;
+  color: #C3FF00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  width: 100%;
+  height: 2.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.events-product-card {
+  margin: 1em 0;
+}
+
+.events-product-card .events-dark-sole-original,
+.events-product-card .events-sole-air-ii,
+.events-product-card .events-tidal-x {
+  background-size: 28em 15em;
+  background-position: center;
+  height: 14em;
+  transition: 0.2s;
+}
+
+.events-product-card .events-sole-air-ii {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/sole-air-ii.png");
+}
+
+.events-product-card .events-tidal-x {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/tidal-x.png");
+}
+
+.events-product-card .events-dark-sole-original {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/audit/images/dark-sole-original.png");
+}
+
+.events-product-card .events-photo-active {
+  background-size: 30.8em 16.5em;
+  transition: 0.2s;
+}
+
+.events-product-card .events-product-details {
+  margin-top: -5px;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.events-product-card .events-product-details h4,
+.events-product-card .events-product-details p {
+  padding: 0.7em 1.25em;
+}
+
+.events-product-card .events-product-details div {
+  display: flex;
+}
+
+.events-product-card .events-product-details .events-more-details-button {
+  background-color: #535353;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  width: 1em;
+  transition: 0.1s;
+}
+
+.events-product-card .events-product-details .events-more-details-button img {
+  position: relative;
+  left: 0.1em;
+}
+
+.events-product-card .events-product-details .events-more-details-button .events-rotate {
+  transition: 0.1s;
+  transform: rotate(90deg);
+}
+
+.events-product-card .events-shoe-details {
+  display: none;
+  background-color: #535353;
+  color: #EFEFEF;
+}
+
+.events-product-card .events-shoe-details .events-active {
+  background-color: #C3FF00;
+  color: #303030;
+}
+
+.events-product-card .events-size-chart,
+.events-product-card p {
+  padding: 1em 1.25em;
+}
+
+.events-product-card .events-size-chart ul,
+.events-product-card p ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.events-product-card .events-size-chart ul li,
+.events-product-card p ul li {
+  padding: 0.5em;
+  background-color: #303030;
+  width: 100%;
+  text-align: center;
+  margin-right: 2px;
+}
+
+.events-product-card .events-buy-now-button {
+  background-color: #303030;
+  text-align: center;
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+.events-shopping-cart {
+  background-color: #171717;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 3.5em;
+}
+
+.events-shopping-cart .events-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.events-shopping-cart .events-container .events-cart {
+  display: flex;
+}
+
+.events-shopping-cart .events-container .events-cart .events-object {
+  margin-right: 0.75em;
+}
+
+.events-footer {
+  color: #EFEFEF;
+  background-color: #303030;
+  margin-top: 2em;
+  padding: 2em 0.5em;
+}
+
+.events-footer .events-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events-footer .events-container .events-object {
+  width: 4.5em;
+}
